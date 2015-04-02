@@ -73,16 +73,19 @@ func main() {
 		Config: config,
 	}
 
-	debugHandler := auth.NewWrapper(
-		config.AuthConfiguration.Username,
-		config.AuthConfiguration.Password,
-	).WrapFunc(debug.NewHandler(remoteRepo))
-
 	brokerCredentials := brokerapi.BrokerCredentials{
 		Username: config.AuthConfiguration.Username,
 		Password: config.AuthConfiguration.Password,
 	}
+
 	brokerAPI := brokerapi.New(serviceBroker, brokerLogger, brokerCredentials)
+	debugHandler := auth.NewWrapper(
+		brokerCredentials.Username,
+		brokerCredentials.Password,
+	).WrapFunc(debug.NewHandler(remoteRepo))
+	fooHandler := foo.NewHandler(remoteRepo)
+
+	http.HandleFunc("/instance", fooHandler)
 	http.HandleFunc("/debug", debugHandler)
 	http.Handle("/", brokerAPI)
 
