@@ -15,9 +15,22 @@
 			"Rev": "150e4e8f749b21a7f0de8e3cfd885143fcea6b32"
 		},
 		{
+			"ImportPath": "github.com/cloudfoundry/dropsonde",
+			"Rev": "3b9165fbab812d425b9b3103841dda26fa57ef68"
+		},
+		{
 			"ImportPath": "github.com/cloudfoundry/gosigar",
 			"Comment": "scotty_09012012-27-g3ed7c74",
 			"Rev": "3ed7c74352dae6dc00bdc8c74045375352e3ec05"
+		},
+		{
+			"ImportPath": "github.com/cloudfoundry/gosteno",
+			"Comment": "scotty_09012012-38-g969c2c5",
+			"Rev": "969c2c565f5f1638b45702f3a07f6c39013bf375"
+		},
+		{
+			"ImportPath": "github.com/cloudfoundry/sonde-go/events",
+			"Rev": "e9b4698e850553401d1d2dd998c756fdf29356ea"
 		},
 		{
 			"ImportPath": "github.com/garyburd/redigo/internal",
@@ -36,6 +49,10 @@
 			"Rev": "760aa2f8a491b6019dcf2df81d913927cb25fbc6"
 		},
 		{
+			"ImportPath": "github.com/gogo/protobuf/proto",
+			"Rev": "056e49a669ad72a638fd7d079c5b587be5b5a47f"
+		},
+		{
 			"ImportPath": "github.com/gorilla/context",
 			"Rev": "215affda49addc4c8ef7e2534915df2c8c35c6cd"
 		},
@@ -52,6 +69,10 @@
 			"Rev": "84d8b2b74375eda9f189283e5f0710e6bcc3fb47"
 		},
 		{
+			"ImportPath": "github.com/nu7hatch/gouuid",
+			"Rev": "179d4d0c4d8d407a32af483c2354df1d2c91e6c3"
+		},
+		{
 			"ImportPath": "github.com/onsi/ginkgo",
 			"Comment": "v1.1.0-28-g7d3d52b",
 			"Rev": "7d3d52b3a3a79d745c2a03ee81b5bc2086642201"
@@ -60,10 +81,6 @@
 			"ImportPath": "github.com/onsi/gomega",
 			"Comment": "v1.0-48-g766f404",
 			"Rev": "766f4042b942146e90594d145c5071fa92c0aa9a"
-		},
-		{
-			"ImportPath": "github.com/pivotal-cf-experimental/goamz/s3",
-			"Rev": "a001f1bdaf569758f0029caeda00cbaf1315fa8f"
 		},
 		{
 			"ImportPath": "github.com/pivotal-cf/brokerapi",
